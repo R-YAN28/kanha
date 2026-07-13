@@ -1868,7 +1868,7 @@ Click Any Song
 
         <div class="song-card">
             <h3>Kunj Bihari</h3>
-            <button class="play" data-song="Kunj.mp3">
+            <button class="play" data-song="kunj.mp3">
                 ▶ Play
             </button>
         </div>
@@ -2157,7 +2157,7 @@ With Kanha's Blessings 🦚
 
 <!--==================== AUDIO ====================-->
 <audio id="bgMusic" autoplay loop>
-    <source src="song/flute.mp3" type="audio/mpeg">
+    <source src="flute.mp3" type="audio/mpeg">
 </audio>    
 
 <audio id="clickSound">
@@ -2295,7 +2295,7 @@ document.querySelectorAll(".play").forEach(btn => {
             return;
         }
 
-        player.src = "song/" + this.dataset.song;
+        player.src = this.dataset.song;
         player.play();
 
         this.innerHTML = "⏸ Pause";
