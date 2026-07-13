@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Nehuu ❤️ | Kanha's Blessings  </title>
+
+<meta name="theme-color" content="#ff4fa0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+<style>
+    /*======================================
+GOOGLE RESET
+======================================*/
+#progress{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:5px;
+
+width:0;
+
+background:#FFD700;
+
+z-index:999999;
+
+}
+
+body{
+    background:
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.35)),
+    url("./img/bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+    color:#fff;
+}
+
+:root{
+
+--pink:#ff4fa0;
+--pink2:#ff7bc5;
+--purple:#7b5cff;
+--dark:#0d1027;
+--white:#ffffff;
+--glass:rgba(255,255,255,.12);
+
+}
+
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+/*======================================
+SCROLLBAR
+======================================*/
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff4fa0;
+border-radius:50px;
+
+}
+
+/*======================================
+LOADER
+======================================*/
+
+#loader{
+
+position:fixed;
+
+inset:0;
+
+background:#0d1027;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+.loader-heart{
+
+width:70px;
+height:70px;
+
+background:#ff2f80;
+
+transform:rotate(-45deg);
+
+position:relative;
+
+animation:pulse 1s infinite;
+
+}
+
+.loader-heart::before,
+.loader-heart::after{
+
+content:"";
+
+position:absolute;
+
+width:70px;
+height:70px;
+
+background:#ff2f80;
+
+border-radius:50%;
+
+}
+
+.loader-heart::before{
+
+top:-35px;
+
+}
+
+.loader-heart::after{
+
+left:35px;
+
+}
+
+@keyframes pulse{
+
+50%{
+
+transform:rotate(-45deg) scale(1.15);
+
+}
+
+}
+
+#loader h2{
+
+margin-top:40px;
+
+font-size:28px;
+
+}
+
+#loader p{
+
+opacity:.8;
+
+}
+
+/*======================================
+CUSTOM CURSOR
+======================================*/
+
+
+
+.cursor{
+
+background:#fff;
+
+}
+
+
+
+/*======================================
+FLOATING HEARTS
+======================================*/
+
+#hearts{
+
+position:fixed;
+
+inset:0;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+/*======================================
+NAVBAR
+======================================*/
+
+header{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+z-index:999;
+
+padding:18px 8%;
+
+}
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:16px 35px;
+
+border-radius:18px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 8px 35px rgba(0,0,0,.25);
+
+ backdrop-filter:blur(35px);
+    background:rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:35px;
+
+list-style:none;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:white;
+
+font-size:17px;
+
+font-weight:500;
+
+transition:.35s;
+
+position:relative;
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-5px;
+
+width:0;
+
+height:2px;
+
+background:#fff;
+
+transition:.35s;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+.right-nav{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+#themeBtn,
+#menu{
+
+width:45px;
+height:45px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.15);
+
+cursor:pointer;
+
+font-size:20px;
+
+transition:.3s;
+
+}
+
+#themeBtn:hover,
+#menu:hover{
+
+transform:scale(1.1);
+
+background:#ff4fa0;
+
+}
+
+/*======================================
+HOME
+======================================*/
+
+#home{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:170px 8% 100px;
+
+gap:70px;
+
+min-height:100vh;
+
+}
+
+.hero-right img{
+    animation: glowImg 3s ease-in-out infinite;
+}
+
+@keyframes glowImg{
+    0%{
+        box-shadow:0 0 20px rgba(255,255,255,.3);
+    }
+    50%{
+        box-shadow:0 0 50px #FFD54F;
+    }
+    100%{
+        box-shadow:0 0 20px rgba(255,255,255,.3);
+    }
+}
+
+.hero-left{
+
+flex:1;
+
+}
+
+.hero-left h3{
+
+font-size:28px;
+
+color:#ffe680;
+
+margin-bottom:15px;
+
+}
+
+.hero-left h1{
+
+font-size:62px;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+font-weight:700;
+
+}
+
+.hero-left p{
+
+font-size:18px;
+
+line-height:1.9;
+
+opacity:.95;
+
+max-width:600px;
+
+}
+
+.hero-buttons{
+
+margin-top:40px;
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn,
+.btn2{
+
+padding:16px 38px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:17px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.btn{
+
+background:white;
+
+color:#ff2f80;
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 35px rgba(255,255,255,.3);
+
+}
+
+.btn2{
+
+background:transparent;
+
+border:2px solid white;
+
+color:white;
+
+}
+
+.btn2:hover{
+
+background:white;
+
+color:#ff2f80;
+
+}
+
+/*======================================
+HERO IMAGE
+======================================*/
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.circle{
+    position:absolute;
+    width:450px;          /* પહેલા 420px હતું */
+    height:600px;
+    background:rgba(0,0,0,0.25);   /* બ્લેક બેકગ્રાઉન્ડ */
+    border-radius:18px;            /* ગોળ નહિ, ઓછું radius */
+    filter:blur(12px);             /* blur ઓછું */
+    animation:none;                /* floating બંધ */
+}
+
+.hero-right img{
+    width:420px;          /* ફોટો નાનો */
+    max-width:100%;
+    border-radius:12px;   /* corner ઓછા */
+    position:relative;
+    z-index:2;
+    animation:none;       /* floating બંધ */
+    filter:none;          /* glow/shadow દૂર */
+    box-shadow:0 8px 20px rgba(0,0,0,.35); /* normal black shadow */
+}
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+}
+
+@keyframes float2{
+
+50%{
+
+transform:translateY(-18px) scale(1.03);
+
+}
+
+}
+
+/*======================================
+MOBILE
+======================================*/
+
+@media(max-width:900px){
+
+.nav-links{
+
+display:none;
+
+}
+
+#home{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+padding-top:140px;
+
+}
+
+.hero-left h1{
+
+font-size:42px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-right img{
+    width:250px;
+}
+
+.circle{
+    width:250px;
+    height:250px;
+}
+}
+/*======================================
+SECTION HEADING
+
+======================================*/
+
+.heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.heading h2{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:12px;
+    text-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.heading p{
+    font-size:18px;
+    opacity:.9;
+}
+
+/*======================================
+COMMON SECTION
+======================================*/
+
+section{
+    padding:100px 8%;
+}
+
+/*======================================
+STATS
+======================================*/
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.stats .box{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.stats .box:hover{
+    transform:translateY(-10px) scale(1.03);
+    background:rgba(255,255,255,.18);
+    box-shadow:0 20px 50px rgba(255,79,160,.35);
+}
+
+.stats .box h2{
+    font-size:48px;
+    color:#fff;
+    margin-bottom:12px;
+}
+
+.stats .box p{
+    font-size:18px;
+    opacity:.95;
+}
+
+/*======================================
+GALLERY
+======================================*/
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,220px));
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+    border-radius:24px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    transition:.5s;
+    cursor:pointer;
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    display:block;
+    transition:.6s;
+}
+
+.card{
+    width:220px;
+    height:300px;
+    margin:auto;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:24px;
+}
+
+.card::before{
+    content:"❤️";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    font-size:55px;
+    opacity:0;
+    transition:.4s;
+    z-index:5;
+}
+
+.card:hover{
+    transform:translateY(-12px) rotate(1deg);
+}
+
+.card:hover img{
+    transform:scale(1.12);
+    filter:brightness(.65);
+}
+
+.card:hover::before{
+    transform:translate(-50%,-50%) scale(1);
+    opacity:1;
+}
+
+/*======================================
+SONGS
+======================================*/
+
+.song-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.song-card{
+    padding:35px;
+    text-align:center;
+    border-radius:24px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.song-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 50px rgba(255,79,160,.4);
+}
+
+.song-card h3{
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.play{
+    border:none;
+    outline:none;
+    padding:15px 35px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#ff4fa0,#ff6db8);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.play:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 30px rgba(255,79,160,.5);
+}
+
+/*======================================
+GLASS EFFECT
+======================================*/
+
+.card,
+.song-card,
+.stats .box{
+    overflow:hidden;
+}
+
+.card::after,
+.song-card::after,
+.stats .box::after{
+    content:"";
+    position:absolute;
+    top:-120%;
+    left:-60%;
+    width:80px;
+    height:260%;
+    background:rgba(255,255,255,.25);
+    transform:rotate(25deg);
+    transition:.7s;
+}
+
+.card:hover::after,
+.song-card:hover::after,
+.stats .box:hover::after{
+    left:130%;
+}
+
+/*======================================
+HOVER GLOW
+======================================*/
+
+.card:hover,
+.song-card:hover,
+.stats .box:hover{
+    border-color:rgba(255,255,255,.35);
+}
+
+/*======================================
+MOBILE
+======================================*/
+
+@media(max-width:900px){
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.song-container{
+    grid-template-columns:1fr;
+}
+
+.heading h2{
+    font-size:36px;
+}
+
+.song-card h3{
+    font-size:24px;
+}
+
+}
+/*======================================
+LOVE LETTER
+======================================*/
+
+#letter{
+    padding:110px 8%;
+}
+
+.letter-card{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(25px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:30px;
+    padding:55px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+    transition:.4s;
+}
+
+.letter-card:hover{
+    transform:translateY(-8px);
+}
+
+.letter-card h3{
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.letter-card p{
+    line-height:2;
+    font-size:18px;
+    opacity:.95;
+    white-space:pre-line;
+}
+
+.letter-card h4{
+    margin-top:35px;
+    color:#ffe680;
+    font-size:22px;
+}
+
+/*======================================
+FAN METER
+======================================*/
+
+.fan-meter{
+    text-align:center;
+}
+
+.meter{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    background:rgba(255,255,255,.15);
+    border-radius:50px;
+    overflow:hidden;
+    height:32px;
+}
+
+.meter-fill{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-weight:700;
+    background:linear-gradient(90deg,#1E88E5,#42A5F5,#FFD54F);
+    animation:meterGlow 3s infinite alternate;
+}
+
+.meter-fill span{
+    color:#FFD700;          /* Golden */
+    font-size:24px;
+    font-weight:900;
+    /* text-shadow:
+        0 0 8px #ffffff,
+        0 0 18px #FFD700,
+        0 0 30px #FFA500; */
+}
+
+@keyframes meterGlow{
+    from{
+        filter:brightness(1);
+    }
+    to{
+        filter:brightness(1.25);
+    }
+}
+
+/*======================================
+DREAM SECTION
+======================================*/
+
+.dream{
+    text-align:center;
+}
+
+.dream h2{
+    font-size:48px;
+}
+
+.dream h3{
+    margin:20px 0;
+    font-size:30px;
+    line-height:1.5;
+}
+
+#countdown{
+    margin-top:25px;
+    font-size:24px;
+    font-weight:600;
+    color:#ffe680;
+}
+
+/*======================================
+GIFT SECTION
+======================================*/
+
+#gift{
+    text-align:center;
+}
+
+.gift-box{
+    width:170px;
+    height:170px;
+    margin:45px auto;
+    border-radius:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:90px;
+    background:linear-gradient(135deg,#ff4fa0,#ff8ec9);
+    box-shadow:0 20px 50px rgba(255,79,160,.45);
+    animation:giftFloat 3s ease-in-out infinite;
+}
+
+@keyframes giftFloat{
+    50%{
+        transform:translateY(-15px) rotate(5deg);
+    }
+}
+
+#giftBtn{
+    border:none;
+    padding:18px 45px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    background:#fff;
+    color:#ff4fa0;
+    transition:.35s;
+}
+
+#giftBtn:hover{
+    transform:scale(1.08);
+    box-shadow:0 15px 35px rgba(255,255,255,.35);
+}
+
+/*======================================
+POPUP
+======================================*/
+
+#popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    padding:20px;
+}
+
+.popup-content{
+    width:100%;
+    max-width:550px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(25px);
+    border-radius:30px;
+    padding:45px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.2);
+    position:relative;
+    animation:popupShow .4s ease;
+}
+
+@keyframes popupShow{
+    from{
+        transform:scale(.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.popup-content h1{
+    font-size:70px;
+}
+
+.popup-content h2{
+    margin:20px 0;
+    font-size:32px;
+}
+
+.popup-content p{
+    line-height:1.8;
+    font-size:17px;
+}
+
+#closePopup{
+    position:absolute;
+    top:18px;
+    right:20px;
+    cursor:pointer;
+    font-size:24px;
+}
+
+#okBtn{
+    margin-top:30px;
+    border:none;
+    padding:15px 40px;
+    border-radius:40px;
+    background:#ff4fa0;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#okBtn:hover{
+    transform:scale(1.05);
+}
+
+/*======================================
+SECRET BUTTON
+======================================*/
+
+#secretBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    font-size:26px;
+    cursor:pointer;
+    color:#fff;
+    background:linear-gradient(135deg,#ff4fa0,#ff7bc5);
+    box-shadow:0 15px 35px rgba(255,79,160,.45);
+    animation:secretPulse 2s infinite;
+    z-index:999;
+}
+
+@keyframes secretPulse{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+/*======================================
+MUSIC MODAL
+======================================*/
+
+#musicModal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99998;
+    padding:20px;
+}
+
+.music-box{
+    width:100%;
+    max-width:500px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(25px);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    position:relative;
+}
+
+.music-box h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.music-box p{
+    line-height:1.8;
+}
+
+#closeMusic{
+    position:absolute;
+    top:18px;
+    right:20px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:768px){
+
+    .letter-card{
+        padding:35px 25px;
+    }
+
+    .letter-card h3{
+        font-size:30px;
+    }
+
+    .dream h2{
+        font-size:36px;
+    }
+
+    .dream h3{
+        font-size:24px;
+    }
+
+    .gift-box{
+        width:130px;
+        height:130px;
+        font-size:70px;
+    }
+
+    .popup-content{
+        padding:30px 20px;
+    }
+
+    .popup-content h2{
+        font-size:26px;
+    }
+
+}
+/*======================================
+DARK MODE
+======================================*/
+
+body.dark{
+    background:linear-gradient(-45deg,#090b18,#181b3d,#0f172a,#312e81);
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+}
+
+body.dark .navbar,
+body.dark .stats .box,
+body.dark .card,
+body.dark .song-card,
+body.dark .letter-card,
+body.dark .music-box,
+body.dark .popup-content{
+    background:rgba(25,25,40,.55);
+    border:1px solid rgba(255,255,255,.08);
+}
+
+body.dark .btn{
+    background:#ff4fa0;
+    color:#fff;
+}
+
+/*======================================
+FLOATING HEARTS
+======================================*/
+
+.heart{
+    position:fixed;
+    bottom:-40px;
+    color:#ff8ec9;
+    pointer-events:none;
+    animation:heartUp linear forwards;
+    opacity:.9;
+}
+
+@keyframes heartUp{
+
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+/*======================================
+FADE ANIMATION
+======================================*/
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:1s;
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/*======================================
+CONFETTI
+======================================*/
+
+#confetti{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+z-index:9999;
+
+}
+
+/*======================================
+FOOTER
+======================================*/
+
+footer{
+
+padding:80px 8%;
+
+text-align:center;
+
+}
+
+.footer-content{
+
+background:rgba(255,255,255,.10);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+padding:50px;
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.footer-content h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+.footer-content p{
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+.footer-content h3{
+
+font-size:22px;
+
+color:#ffe680;
+
+}
+
+/*======================================
+SECTION SPACING
+======================================*/
+
+#gallery,
+#songs,
+#letter,
+#gift,
+.fan-meter,
+.dream{
+
+scroll-margin-top:120px;
+
+}
+
+/*======================================
+IMAGE EFFECT
+======================================*/
+
+.hero-right img,
+.card img{
+
+user-select:none;
+
+-webkit-user-drag:none;
+
+}
+
+/*======================================
+BUTTON EFFECT
+======================================*/
+
+button,
+.btn,
+.btn2{
+
+transition:.35s;
+
+}
+
+button:hover,
+.btn:hover,
+.btn2:hover{
+
+filter:brightness(1.05);
+
+}
+
+/*======================================
+SMOOTH GLOW
+======================================*/
+
+.box,
+.song-card,
+.card,
+.letter-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.box::before,
+.song-card::before,
+.card::before,
+.letter-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+
+left:-50%;
+
+width:80px;
+
+height:250%;
+
+background:rgba(255,255,255,.18);
+
+transform:rotate(25deg);
+
+transition:.8s;
+
+}
+
+.box:hover::before,
+.song-card:hover::before,
+.card:hover::before,
+.letter-card:hover::before{
+
+left:140%;
+
+}
+
+/*======================================
+MOBILE MENU ICON
+======================================*/
+
+#menu{
+
+display:none;
+
+}
+
+@media(max-width:900px){
+
+#menu{
+
+display:flex;
+
+}
+
+}
+
+/*======================================
+FINAL MOBILE
+======================================*/
+
+@media(max-width:768px){
+
+section{
+
+padding:70px 20px;
+
+}
+
+.heading h2{
+
+font-size:32px;
+
+}
+
+.heading p{
+
+font-size:15px;
+
+}
+
+.footer-content{
+
+padding:35px 20px;
+
+}
+
+.footer-content h2{
+
+font-size:30px;
+
+}
+
+.footer-content h3{
+
+font-size:18px;
+
+}
+
+#secretBtn{
+
+width:55px;
+
+height:55px;
+
+font-size:22px;
+
+right:15px;
+
+bottom:15px;
+
+}
+
+}
+
+/*======================================
+PREMIUM ANIMATION
+======================================*/
+
+@keyframes glow{
+
+0%{
+
+box-shadow:0 0 10px rgba(255,79,160,.3);
+
+}
+
+50%{
+
+box-shadow:0 0 30px rgba(255,79,160,.8);
+
+}
+
+100%{
+
+box-shadow:0 0 10px rgba(255,79,160,.3);
+
+}
+
+}
+
+.gift-box,
+#secretBtn{
+
+animation:glow 2s infinite;
+
+}
+.letter-card:hover{
+
+transform:scale(1.03) rotate(.5deg);
+
+}
+#giftBtn{
+
+animation:pulseGift 1.8s infinite;
+
+}
+
+@keyframes pulseGift{
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+}
+.footer-content{
+
+animation:footerGlow 3s infinite alternate;
+
+}
+
+@keyframes footerGlow{
+
+from{
+
+box-shadow:0 0 20px rgba(255,255,255,.2);
+
+}
+
+to{
+
+box-shadow:0 0 50px #FFD54F;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="progress"></div>
+<!--==================== LOADER ====================-->
+
+<div id="loader">
+
+<div class="loader-heart"></div>
+
+<h2>Preparing Kanha's Blessings 🦚</h2>
+
+<p>Please Wait...</p>
+
+</div>
+
+<!--==================== CUSTOM CURSOR ====================-->
+
+
+
+
+
+<!--==================== FLOATING HEARTS ====================-->
+
+<div id="hearts"></div>
+
+<!--==================== NAVBAR ====================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+🦚 Nehuu ❤️
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#songs">Songs</a></li>
+
+<li><a href="#letter">Letter</a></li>
+
+<li><a href="#gift">Gift</a></li>
+
+</ul>
+
+<div class="right-nav">
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div id="menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--==================== HERO ====================-->
+
+<section id="home">
+
+<div class="hero-left">
+
+<h3>Hello Nehuu ❤️</h3>
+
+<h1 id="typing"></h1>
+
+<p>
+
+This little surprise is specially made
+for the sweetest girl who loves Kanha ❤️
+
+Every section is made with love,
+just to bring a smile to your face.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#gallery" class="btn">
+
+Explore ❤️
+
+</a>
+
+<a href="#gift" class="btn2">
+
+Surprise 🎁
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="circle"></div>
+
+<img src="img/10.jpg" alt="Darshan Raval">
+
+</div>
+
+</section>
+
+<!--==================== STATS ====================-->
+
+<section class="stats">
+
+<div class="box">
+
+<h2>100%</h2>
+
+<p>Faith in Kanha 🦚</p>
+
+</div>
+
+<div class="box">
+
+<h2>∞</h2>
+
+<p>Blessings Forever ✨</p>
+
+</div>
+
+<div class="box">
+
+<h2>❤️❤️❤️❤️❤️</h2>
+
+<p>Keep Smiling Always</p>
+
+</div>
+
+</section>
+
+<!--==================== GALLERY ====================-->
+
+<section id="gallery">
+
+<div class="heading">
+
+<h2>Kanha Gallery 🦚</h2>
+
+<p>
+
+Beautiful Moments of Kanha 🦚
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="card">
+
+<img src="img/A.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/B.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/C.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/D.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/E.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/F.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/G.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/H.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/I.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="img/J.jpg">
+
+</div>
+</div>
+
+</section>
+
+<!--==================== SONGS ====================-->
+
+<section id="songs">
+
+<div class="heading">
+
+<h2>Songs That Make You Smile ❤️</h2>
+
+<p>
+
+Click Any Song
+
+</p>
+
+</div>
+
+<div class="song-container">
+
+<!--==================== SONGS ====================-->
+
+
+
+    <!-- <div class="heading">
+        <h2>Favorite Songs 🎵</h2>
+        <p>Click Play & Enjoy ❤️</p>
+    </div> -->
+
+    <div class="song-container">
+
+        <div class="song-card">
+            <h3>Kunj Bihari</h3>
+            <button class="play" data-song="Kunj.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+        <div class="song-card">
+            <h3>Prem Ki Leela</h3>
+            <button class="play" data-song="prem.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+        <div class="song-card">
+            <h3>Shyamal Sanware</h3>
+            <button class="play" data-song="shyamal.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+        <div class="song-card">
+            <h3>Mukhda Dikha Jaiyo</h3>
+            <button class="play" data-song="mukhda.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+        <div class="song-card">
+            <h3>Mann Ki Dashai</h3>
+            <button class="play" data-song="mann.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+        <div class="song-card">
+            <h3>Shubh Din Aayor</h3>
+            <button class="play" data-song="shubh.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+        <div class="song-card">
+            <h3>Krishna Govinda</h3>
+            <button class="play" data-song="krishna.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+        <div class="song-card">
+            <h3>Anth Mein Aarambh</h3>
+            <button class="play" data-song="anth.mp3">
+                ▶ Play
+            </button>
+        </div>
+
+
+    </div>
+
+
+
+<!-- Hidden Audio Player -->
+
+<audio id="player" controls style="display:none;">
+
+</audio>
+
+
+</div>
+
+</section>
+
+<!--==================== LOVE LETTER ====================-->
+
+<section id="letter">
+
+    <div class="heading">
+        <h2>Just For You ❤️</h2>
+<p>Every Word Is Filled With Love 🦚</p>
+    </div>
+
+    <div class="letter-card">
+
+        <h3>Dear Nehuu ❤️</h3>
+
+        <p>
+            Dear Nehuu ❤️
+
+            You always smile whenever you hear Kanha's name.
+
+            That's why I made this little surprise just for you.
+
+            May Lord Krishna always protect you, guide you, and fill your life with happiness.
+
+            Never stop smiling, because your smile is truly beautiful.
+
+            Stay blessed always. ❤️🦚
+        </p>
+
+        <h4>— From Your Bestie...❤️</h4>
+
+    </div>
+
+</section>
+
+<!--==================== FAN METER ====================-->
+
+<section class="fan-meter">
+
+    <div class="heading">
+        <h2>Fan Meter ❤️</h2>
+    </div>
+
+    <div class="meter">
+
+        <div class="meter-fill">
+
+            <span>100%</span>
+
+        </div>
+
+    </div>
+
+    <p>
+        100% Kanha Devotee 🦚
+    </p>
+
+</section>
+
+<!--==================== COUNTDOWN ====================-->
+
+<section class="dream">
+
+    <h2>A Prayer For You 🙏</h2>
+
+    <h3>
+
+       May Kanha Always Stay With You ❤️🦚
+
+    </h3>
+
+    <p style="margin-top:25px;font-size:20px;line-height:1.8;">
+        May every step of your life be filled with happiness,<br>
+        peace, love and endless blessings.<br><br>
+
+        May Kanha always protect your smile. ❤️
+    </p>
+</section>
+
+<!--==================== GIFT ====================-->
+
+<section id="gift">
+
+    <div class="heading">
+
+        <h2>Final Surprise 🎁</h2>
+
+        <p>Open The Gift</p>
+
+    </div>
+
+    <div class="gift-box">
+
+        <i class="fa-solid fa-gift"></i>
+
+    </div>
+
+    <button id="giftBtn">
+
+       Receive Blessings 🦚
+
+    </button>
+
+</section>
+
+<!--==================== POPUP ====================-->
+
+<div id="popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </span>
+
+        <h1>❤️</h1>
+
+        <h2>
+
+            Kanha Bless You Always ❤️🦚
+
+        </h2>
+
+        <p>
+May Krishna protect every smile of yours.<br><br>
+
+May all your dreams come true.<br><br>
+
+Stay happy forever.<br><br>
+
+Whenever you smile,<br><br>
+
+Remember...<br><br>
+
+Kanha is smiling with you. 🦚❤️
+</p>
+
+        <button id="okBtn">
+
+            Thank You ❤️
+
+        </button>
+
+    </div>
+
+</div>
+
+<!--==================== SECRET BUTTON ====================-->
+
+<button id="secretBtn">
+
+    🦚
+
+</button>
+
+<!--==================== MUSIC MODAL ====================-->
+
+<div id="musicModal">
+
+    <div class="music-box">
+
+        <span id="closeMusic">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </span>
+
+        <h2>Enjoy The Music 🎵</h2>
+
+        <p>
+
+            Your selected song
+            will open in YouTube.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!--==================== CONFETTI ====================-->
+
+<canvas id="confetti"></canvas>
+
+<!--==================== FOOTER ====================-->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>
+
+            ❤️ Thank You ❤️
+
+        </h2>
+
+        <p>
+
+Designed Especially
+For  Nehuu ❤️
+
+With Kanha's Blessings 🦚
+
+        </p>
+
+        <h3>
+
+            Made With ❤️
+
+— Your Bestie 🦚
+
+        </h3>
+
+    </div>
+
+</footer>
+
+<!--==================== AUDIO ====================-->
+<audio id="bgMusic" autoplay loop>
+    <source src="song/flute.mp3" type="audio/mpeg">
+</audio>    
+
+<audio id="clickSound">
+
+    <source src="assets/click.mp3" type="audio/mpeg">
+
+</audio>
+
+<audio id="giftSound">
+
+    <source src="assets/surprise.mp3" type="audio/mpeg">
+
+</audio>
+
+<!--==================== JAVASCRIPT ====================-->
+
+<!-- <script src="script.js"></script> -->
+ <script>
+    /*=====================================
+LOADER
+=====================================*/
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.opacity="0";
+
+document.getElementById("loader").style.visibility="hidden";
+
+},1800);
+
+});
+
+/*=====================================
+TYPING EFFECT
+=====================================*/
+
+const text="Kanha Loves You, Nehuu ❤️🦚";
+
+let i=0;
+
+function typing(){
+
+const typingBox=document.getElementById("typing");
+
+if(i<text.length){
+
+typingBox.innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,90);
+
+}
+
+}
+
+typing();
+
+
+
+/*=====================================
+FLOATING HEARTS
+=====================================*/
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+const icons=["🌸","🪷","✨","🦚","💖"];
+heart.innerHTML=icons[Math.floor(Math.random()*icons.length)];
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*25)+"px";
+
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},8000);
+
+}
+
+setInterval(createHeart,450);
+
+/*=====================================
+THEME BUTTON
+=====================================*/
+
+const themeBtn=document.getElementById("themeBtn");
+
+themeBtn.onclick=()=>{
+
+document.body.classList.toggle("dark");
+
+const icon=themeBtn.querySelector("i");
+
+if(document.body.classList.contains("dark")){
+
+icon.className="fa-solid fa-sun";
+
+}else{
+
+icon.className="fa-solid fa-moon";
+
+}
+
+};
+
+/*=====================================
+SONG BUTTONS
+=====================================*/
+
+const player = document.getElementById("player");
+
+document.querySelectorAll(".play").forEach(btn => {
+
+    btn.onclick = function () {
+
+        document.querySelectorAll(".play").forEach(b => {
+            b.innerHTML = "▶ Play";
+        });
+
+        if (player.src.includes(this.dataset.song) && !player.paused) {
+            player.pause();
+            this.innerHTML = "▶ Play";
+            return;
+        }
+
+        player.src = "song/" + this.dataset.song;
+        player.play();
+
+        this.innerHTML = "⏸ Pause";
+    };
+
+});
+
+player.onended = function () {
+    document.querySelectorAll(".play").forEach(b => {
+        b.innerHTML = "▶ Play";
+    });
+};
+
+/*=====================================
+POPUP
+=====================================*/
+
+const popup=document.getElementById("popup");
+
+const giftBtn=document.getElementById("giftBtn");
+
+const closePopup=document.getElementById("closePopup");
+
+const okBtn=document.getElementById("okBtn");
+
+giftBtn.onclick=()=>{
+
+popup.style.display="flex";
+
+const sound=document.getElementById("giftSound");
+
+if(sound){
+
+sound.play().catch(()=>{});
+
+}
+
+};
+
+closePopup.onclick=()=>{
+
+popup.style.display="none";
+
+};
+
+okBtn.onclick=()=>{
+
+popup.style.display="none";
+
+};
+
+window.onclick=(e)=>{
+
+if(e.target==popup){
+
+popup.style.display="none";
+
+}
+
+};
+
+/*=====================================
+CLICK SOUND
+=====================================*/
+
+document.querySelectorAll("button,.btn,.btn2").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+const click=document.getElementById("clickSound");
+
+if(click){
+
+click.currentTime=0;
+
+click.play().catch(()=>{});
+
+}
+
+});
+
+});
+/*=====================================
+SCROLL REVEAL
+=====================================*/
+
+const revealItems=document.querySelectorAll(
+".heading,.stats .box,.card,.song-card,.letter-card,.gift-box,.footer-content,.fan-meter,.dream"
+);
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{
+threshold:.15
+});
+
+revealItems.forEach(item=>{
+
+item.classList.add("fade-up");
+
+observer.observe(item);
+
+});
+
+/*=====================================
+SECRET BUTTON
+=====================================*/
+
+const secretBtn=document.getElementById("secretBtn");
+
+secretBtn.addEventListener("click",()=>{
+
+alert("🦚 Kanha Says ❤️\n\nKeep Smiling Nehuu 😊\n\nEverything Will Be Beautiful.");
+
+heartExplosion();
+
+});
+
+/*=====================================
+HEART EXPLOSION
+=====================================*/
+
+function heartExplosion(){
+
+for(let i=0;i<40;i++){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="💖";
+
+heart.style.left=window.innerWidth/2+"px";
+
+heart.style.top=window.innerHeight/2+"px";
+
+heart.style.position="fixed";
+
+heart.style.fontSize=(18+Math.random()*20)+"px";
+
+heart.style.pointerEvents="none";
+
+heart.style.transition="1.5s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.style.left=Math.random()*window.innerWidth+"px";
+
+heart.style.top=Math.random()*window.innerHeight+"px";
+
+heart.style.opacity="0";
+
+heart.style.transform="scale(2)";
+
+},50);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},1700);
+
+}
+
+}
+
+/*=====================================
+CONFETTI
+=====================================*/
+
+const canvas=document.getElementById("confetti");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+function random(min,max){
+
+return Math.random()*(max-min)+min;
+
+}
+
+function createConfetti(){
+
+particles=[];
+
+for(let i=0;i<180;i++){
+
+particles.push({
+
+x:random(0,canvas.width),
+
+y:random(-canvas.height,0),
+
+r:random(4,9),
+
+dx:random(-2,2),
+
+dy:random(2,6),
+
+color:`hsl(${Math.random()*360},100%,70%)`
+
+});
+
+}
+
+}
+
+function drawConfetti(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+
+ctx.fillStyle=p.color;
+
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+
+ctx.fill();
+
+p.x+=p.dx;
+
+p.y+=p.dy;
+
+if(p.y>canvas.height){
+
+p.y=-20;
+
+}
+
+});
+
+requestAnimationFrame(drawConfetti);
+
+}
+
+giftBtn.addEventListener("click",()=>{
+
+createConfetti();
+
+drawConfetti();
+
+setTimeout(()=>{
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles=[];
+
+},6000);
+
+});
+
+/*=====================================
+MOBILE MENU
+=====================================*/
+
+const menu=document.getElementById("menu");
+
+const nav=document.querySelector(".nav-links");
+
+menu.addEventListener("click",()=>{
+
+nav.classList.toggle("active");
+
+});
+
+/*=====================================
+WINDOW RESIZE
+=====================================*/
+
+window.addEventListener("resize",()=>{
+
+canvas.width=window.innerWidth;
+
+canvas.height=window.innerHeight;
+
+});
+
+/*=====================================
+WELCOME POPUP
+=====================================*/
+if (!sessionStorage.getItem("welcomeShown")) {
+
+    setTimeout(() => {
+        alert("🦚 Welcome Nehuu ❤️\n\nMay Kanha Always Bless You.\n\nEnjoy This Little Surprise ❤️");
+        sessionStorage.setItem("welcomeShown", "yes");
+    }, 2500);
+
+}
+
+/*=====================================
+END
+=====================================*/
+function toggleSong(id, btn) {
+    const song = document.getElementById(id);
+
+    // Bija badha songs bandh karo
+    document.querySelectorAll("audio").forEach(audio => {
+        if (audio !== song) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    });
+
+    // Badha button nu text Play karo
+    document.querySelectorAll("button").forEach(button => {
+        button.innerHTML = "Play ▶️";
+    });
+
+    // Play/Pause
+    if (song.paused) {
+        song.play();
+        btn.innerHTML = "Pause ⏸️";
+    } else {
+        song.pause();
+        btn.innerHTML = "Play ▶️";
+    }
+}
+
+const star = document.createElement("div");
+
+star.innerHTML = "✨";
+star.style.position = "fixed";
+star.style.pointerEvents = "none";
+star.style.fontSize = "20px";
+star.style.zIndex = "999999";
+star.style.filter = "drop-shadow(0 0 8px gold)";
+
+document.body.appendChild(star);
+
+document.addEventListener("mousemove", (e) => {
+    star.style.left = (e.clientX + 15) + "px";
+    star.style.top = (e.clientY - 15) + "px";
+});
+
+window.addEventListener("scroll",()=>{
+
+let h=document.documentElement;
+
+let sc=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+
+document.getElementById("progress").style.width=sc+"%";
+
+});
+ </script>
+
+</body>
+</html>
